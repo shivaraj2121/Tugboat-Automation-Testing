@@ -1,5 +1,5 @@
 import actionHelper from "../Util/actionHelper"
-import { locator } from "../Pages/loginLocator"
+import {locator} from "../Pages/loginLocator"
 export default  new class LoginPage 
 
 {

@@ -7,6 +7,7 @@ const { defineConfig, devices } = require('@playwright/test');
 module.exports = defineConfig({
   testDir: './tests',
   timeout:30*1000,
+  reporter:'html',
   expect:{
     timeout:10000
   },
@@ -17,6 +18,8 @@ module.exports = defineConfig({
  
 
   use: {
+    screenshot:'on',
+    video:'retain-on-failure'
 
     
   },
@@ -26,15 +29,15 @@ module.exports = defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
 
 
