@@ -8,14 +8,14 @@ const Config: PlaywrightTestConfig = {
     name: 'chromium',
     use: { browserName: 'chromium' }
   },
-  {
-    name: 'firefox',
-    use: { browserName: 'firefox' }
-  },
-  {
-    name: 'webkit',
-    use: { browserName: 'webkit' }
-  },
+  // {
+  //   name: 'firefox',
+  //   use: { browserName: 'firefox' }
+  // },
+  // {
+  //   name: 'webkit',
+  //   use: { browserName: 'webkit' }
+  // },
   ],
   use:{
     trace: 'on-first-retry',

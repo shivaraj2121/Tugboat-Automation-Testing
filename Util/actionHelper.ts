@@ -1,7 +1,5 @@
 import {BrowserContext, ElementHandle, Page,} from '@playwright/test'
 
-
-
 export default class Action  {
     
     static async openApplication(page,url)
@@ -14,12 +12,12 @@ export default class Action  {
         await page.locator(selector).selectOption(text)
        
     }
-    static async click(page, selector) {
+    static async click(page, selector,) {
      await page.click(selector);
    
     }
 
-    static async type(page, selector: string, text) {
+    static async type(page, selector, text) {
         await page.fill(selector,text);
         
     }
